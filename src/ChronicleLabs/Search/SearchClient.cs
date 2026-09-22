@@ -12,7 +12,9 @@ public partial class SearchClient : ISearchClient
         _client = client;
     }
 
-    private async Task<WithRawResponse<EventListResponse>> EventsAsyncCore(
+    private async global::System.Threading.Tasks.Task<
+        WithRawResponse<EventListResponse>
+    > EventsAsyncCore(
         SearchRequest request,
         RequestOptions? options = null,
         CancellationToken cancellationToken = default

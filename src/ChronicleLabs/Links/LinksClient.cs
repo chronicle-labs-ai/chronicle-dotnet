@@ -12,7 +12,9 @@ public partial class LinksClient : ILinksClient
         _client = client;
     }
 
-    private async Task<WithRawResponse<StatusResponse>> AddEntityRefAsyncCore(
+    private async global::System.Threading.Tasks.Task<
+        WithRawResponse<StatusResponse>
+    > AddEntityRefAsyncCore(
         AddEntityRefRequest request,
         RequestOptions? options = null,
         CancellationToken cancellationToken = default
@@ -213,7 +215,9 @@ public partial class LinksClient : ILinksClient
         }
     }
 
-    private async Task<WithRawResponse<CreateLinkResponse>> CreateEventLinkAsyncCore(
+    private async global::System.Threading.Tasks.Task<
+        WithRawResponse<CreateLinkResponse>
+    > CreateEventLinkAsyncCore(
         CreateLinkRequest request,
         RequestOptions? options = null,
         CancellationToken cancellationToken = default
@@ -414,7 +418,9 @@ public partial class LinksClient : ILinksClient
         }
     }
 
-    private async Task<WithRawResponse<LinkEntityResponse>> LinkEntitiesAsyncCore(
+    private async global::System.Threading.Tasks.Task<
+        WithRawResponse<LinkEntityResponse>
+    > LinkEntitiesAsyncCore(
         LinkEntityRequest request,
         RequestOptions? options = null,
         CancellationToken cancellationToken = default
@@ -615,7 +621,9 @@ public partial class LinksClient : ILinksClient
         }
     }
 
-    private async Task<WithRawResponse<EventListResponse>> TraverseGraphAsyncCore(
+    private async global::System.Threading.Tasks.Task<
+        WithRawResponse<EventListResponse>
+    > TraverseGraphAsyncCore(
         GraphRequest request,
         RequestOptions? options = null,
         CancellationToken cancellationToken = default

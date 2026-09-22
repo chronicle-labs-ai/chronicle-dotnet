@@ -8,4 +8,9 @@ public partial interface IChronicle
     public IDiscoverClient Discover { get; }
     public ILinksClient Links { get; }
     public ISdkClient Sdk { get; }
+    public IAgentsClient Agents { get; }
+    public IDatasetsClient Datasets { get; }
+    public IEnvironmentsClient Environments { get; }
+    public IBacktestsClient Backtests { get; }
+    public ICredentialsClient Credentials { get; }
 }

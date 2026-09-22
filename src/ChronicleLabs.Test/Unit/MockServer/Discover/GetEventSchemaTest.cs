@@ -10,7 +10,7 @@ namespace ChronicleLabs.Test.Unit.MockServer.Discover;
 public class GetEventSchemaTest : BaseMockServerTest
 {
     [NUnit.Framework.Test]
-    public async Task MockServerTest()
+    public async global::System.Threading.Tasks.Task MockServerTest()
     {
         const string mockResponse = """
             {

@@ -12,7 +12,9 @@ public partial class SdkClient : ISdkClient
         _client = client;
     }
 
-    private async Task<WithRawResponse<AcceptedResponse>> IdentifyUserAsyncCore(
+    private async global::System.Threading.Tasks.Task<
+        WithRawResponse<AcceptedResponse>
+    > IdentifyUserAsyncCore(
         IdentifyUserRequest request,
         RequestOptions? options = null,
         CancellationToken cancellationToken = default
@@ -213,7 +215,9 @@ public partial class SdkClient : ISdkClient
         }
     }
 
-    private async Task<WithRawResponse<AcceptedResponse>> TrackSignalsAsyncCore(
+    private async global::System.Threading.Tasks.Task<
+        WithRawResponse<AcceptedResponse>
+    > TrackSignalsAsyncCore(
         TrackSignalsRequest request,
         RequestOptions? options = null,
         CancellationToken cancellationToken = default
@@ -414,7 +418,9 @@ public partial class SdkClient : ISdkClient
         }
     }
 
-    private async Task<WithRawResponse<AcceptedResponse>> TrackTracesAsyncCore(
+    private async global::System.Threading.Tasks.Task<
+        WithRawResponse<AcceptedResponse>
+    > TrackTracesAsyncCore(
         TrackTracesRequest request,
         RequestOptions? options = null,
         CancellationToken cancellationToken = default

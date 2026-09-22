@@ -10,7 +10,7 @@ namespace ChronicleLabs.Test.Unit.MockServer.Events;
 public class IngestEventTest : BaseMockServerTest
 {
     [NUnit.Framework.Test]
-    public async Task MockServerTest()
+    public async global::System.Threading.Tasks.Task MockServerTest()
     {
         const string requestJson = """
             {

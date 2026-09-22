@@ -1,0 +1,37 @@
+using ChronicleLabs.Core;
+using global::System.Text.Json;
+using global::System.Text.Json.Serialization;
+
+namespace ChronicleLabs;
+
+[Serializable]
+public record CreateSavedViewRequestStateFiltersItem : IJsonOnDeserialized
+{
+    [JsonExtensionData]
+    private readonly IDictionary<string, JsonElement> _extensionData =
+        new Dictionary<string, JsonElement>();
+
+    [JsonPropertyName("columnId")]
+    public required string ColumnId { get; set; }
+
+    [JsonPropertyName("id")]
+    public string? Id { get; set; }
+
+    [JsonPropertyName("operator")]
+    public required string Operator { get; set; }
+
+    [JsonPropertyName("value")]
+    public required object Value { get; set; }
+
+    [JsonIgnore]
+    public ReadOnlyAdditionalProperties AdditionalProperties { get; private set; } = new();
+
+    void IJsonOnDeserialized.OnDeserialized() =>
+        AdditionalProperties.CopyFromExtensionData(_extensionData);
+
+    /// <inheritdoc />
+    public override string ToString()
+    {
+        return JsonUtils.Serialize(this);
+    }
+}

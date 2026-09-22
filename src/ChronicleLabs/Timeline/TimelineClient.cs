@@ -12,7 +12,9 @@ public partial class TimelineClient : ITimelineClient
         _client = client;
     }
 
-    private async Task<WithRawResponse<EventPage>> GetTimelineAsyncCore(
+    private async global::System.Threading.Tasks.Task<
+        WithRawResponse<EventPage>
+    > GetTimelineAsyncCore(
         GetTimelineRequest request,
         RequestOptions? options = null,
         CancellationToken cancellationToken = default

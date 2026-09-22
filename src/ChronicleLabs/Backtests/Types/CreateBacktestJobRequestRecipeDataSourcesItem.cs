@@ -1,0 +1,40 @@
+using ChronicleLabs.Core;
+using global::System.Text.Json;
+using global::System.Text.Json.Serialization;
+
+namespace ChronicleLabs;
+
+[Serializable]
+public record CreateBacktestJobRequestRecipeDataSourcesItem : IJsonOnDeserialized
+{
+    [JsonExtensionData]
+    private readonly IDictionary<string, JsonElement> _extensionData =
+        new Dictionary<string, JsonElement>();
+
+    [JsonPropertyName("count")]
+    public required uint Count { get; set; }
+
+    [JsonPropertyName("filters")]
+    public CreateBacktestJobRequestRecipeDataSourcesItemFilters? Filters { get; set; }
+
+    [JsonPropertyName("id")]
+    public required string Id { get; set; }
+
+    [JsonPropertyName("kind")]
+    public required CreateBacktestJobRequestRecipeDataSourcesItemKind Kind { get; set; }
+
+    [JsonPropertyName("label")]
+    public required string Label { get; set; }
+
+    [JsonIgnore]
+    public ReadOnlyAdditionalProperties AdditionalProperties { get; private set; } = new();
+
+    void IJsonOnDeserialized.OnDeserialized() =>
+        AdditionalProperties.CopyFromExtensionData(_extensionData);
+
+    /// <inheritdoc />
+    public override string ToString()
+    {
+        return JsonUtils.Serialize(this);
+    }
+}

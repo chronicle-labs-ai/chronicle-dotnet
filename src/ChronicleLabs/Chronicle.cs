@@ -15,6 +15,7 @@ public partial class Chronicle : IChronicle
                 { "X-Fern-Language", "C#" },
                 { "X-Fern-SDK-Name", "ChronicleLabs.Api" },
                 { "X-Fern-SDK-Version", global::ChronicleLabs.Version.Current },
+                { "User-Agent", "ChronicleLabs.Api/0.0.13" },
             }
         );
         foreach (var header in platformHeaders)
@@ -39,6 +40,11 @@ public partial class Chronicle : IChronicle
         Discover = new DiscoverClient(_client);
         Links = new LinksClient(_client);
         Sdk = new SdkClient(_client);
+        Agents = new AgentsClient(_client);
+        Datasets = new DatasetsClient(_client);
+        Environments = new EnvironmentsClient(_client);
+        Backtests = new BacktestsClient(_client);
+        Credentials = new CredentialsClient(_client);
     }
 
     public IEventsClient Events { get; }
@@ -52,4 +58,14 @@ public partial class Chronicle : IChronicle
     public ILinksClient Links { get; }
 
     public ISdkClient Sdk { get; }
+
+    public IAgentsClient Agents { get; }
+
+    public IDatasetsClient Datasets { get; }
+
+    public IEnvironmentsClient Environments { get; }
+
+    public IBacktestsClient Backtests { get; }
+
+    public ICredentialsClient Credentials { get; }
 }

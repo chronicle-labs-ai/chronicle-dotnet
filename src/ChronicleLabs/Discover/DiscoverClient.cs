@@ -12,7 +12,9 @@ public partial class DiscoverClient : IDiscoverClient
         _client = client;
     }
 
-    private async Task<WithRawResponse<SourceListResponse>> ListSourcesAsyncCore(
+    private async global::System.Threading.Tasks.Task<
+        WithRawResponse<SourceListResponse>
+    > ListSourcesAsyncCore(
         RequestOptions? options = null,
         CancellationToken cancellationToken = default
     )
@@ -162,7 +164,9 @@ public partial class DiscoverClient : IDiscoverClient
         }
     }
 
-    private async Task<WithRawResponse<EntityTypeListResponse>> ListEntityTypesAsyncCore(
+    private async global::System.Threading.Tasks.Task<
+        WithRawResponse<EntityTypeListResponse>
+    > ListEntityTypesAsyncCore(
         RequestOptions? options = null,
         CancellationToken cancellationToken = default
     )
@@ -312,7 +316,9 @@ public partial class DiscoverClient : IDiscoverClient
         }
     }
 
-    private async Task<WithRawResponse<EntityListResponse>> ListEntitiesAsyncCore(
+    private async global::System.Threading.Tasks.Task<
+        WithRawResponse<EntityListResponse>
+    > ListEntitiesAsyncCore(
         ListEntitiesRequest request,
         RequestOptions? options = null,
         CancellationToken cancellationToken = default
@@ -480,7 +486,9 @@ public partial class DiscoverClient : IDiscoverClient
         }
     }
 
-    private async Task<WithRawResponse<SourceSchema>> GetEventSchemaAsyncCore(
+    private async global::System.Threading.Tasks.Task<
+        WithRawResponse<SourceSchema>
+    > GetEventSchemaAsyncCore(
         GetEventSchemaRequest request,
         RequestOptions? options = null,
         CancellationToken cancellationToken = default

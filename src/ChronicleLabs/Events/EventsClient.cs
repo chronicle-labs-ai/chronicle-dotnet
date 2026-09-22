@@ -14,7 +14,9 @@ public partial class EventsClient : IEventsClient
         _client = client;
     }
 
-    private async Task<WithRawResponse<EventListResponse>> QueryEventsAsyncCore(
+    private async global::System.Threading.Tasks.Task<
+        WithRawResponse<EventListResponse>
+    > QueryEventsAsyncCore(
         QueryEventsRequest request,
         RequestOptions? options = null,
         CancellationToken cancellationToken = default
@@ -185,7 +187,9 @@ public partial class EventsClient : IEventsClient
         }
     }
 
-    private async Task<WithRawResponse<IngestResponse>> IngestEventAsyncCore(
+    private async global::System.Threading.Tasks.Task<
+        WithRawResponse<IngestResponse>
+    > IngestEventAsyncCore(
         IngestRequest request,
         RequestOptions? options = null,
         CancellationToken cancellationToken = default
@@ -385,7 +389,9 @@ public partial class EventsClient : IEventsClient
         }
     }
 
-    private async Task<WithRawResponse<IngestResponse>> IngestEventBatchAsyncCore(
+    private async global::System.Threading.Tasks.Task<
+        WithRawResponse<IngestResponse>
+    > IngestEventBatchAsyncCore(
         IEnumerable<IngestRequest> request,
         RequestOptions? options = null,
         CancellationToken cancellationToken = default
@@ -585,7 +591,9 @@ public partial class EventsClient : IEventsClient
         }
     }
 
-    private async Task<WithRawResponse<IAsyncEnumerable<EventResult>>> StreamEventsAsyncCore(
+    private async global::System.Threading.Tasks.Task<
+        WithRawResponse<IAsyncEnumerable<EventResult>>
+    > StreamEventsAsyncCore(
         StreamEventsRequest request,
         RequestOptions? options = null,
         CancellationToken cancellationToken = default

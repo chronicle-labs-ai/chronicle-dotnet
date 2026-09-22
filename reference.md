@@ -953,3 +953,2766 @@ await client.Sdk.TrackTracesAsync(new TrackTracesRequest());
 </dl>
 </details>
 
+## agents
+<details><summary><code>client.Agents.<a href="/src/ChronicleLabs/Agents/AgentsClient.cs">ListAgentsAsync</a>() -> WithRawResponseTask&lt;IEnumerable&lt;AgentSummary&gt;&gt;</code></summary>
+<dl>
+<dd>
+
+#### 🔌 Usage
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+```csharp
+await client.Agents.ListAgentsAsync();
+```
+</dd>
+</dl>
+</dd>
+</dl>
+
+
+</dd>
+</dl>
+</details>
+
+<details><summary><code>client.Agents.<a href="/src/ChronicleLabs/Agents/AgentsClient.cs">SearchAgentHashIndexAsync</a>(SearchAgentHashIndexRequest { ... }) -> WithRawResponseTask&lt;IEnumerable&lt;HashIndexEntry&gt;&gt;</code></summary>
+<dl>
+<dd>
+
+#### 🔌 Usage
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+```csharp
+await client.Agents.SearchAgentHashIndexAsync(new SearchAgentHashIndexRequest());
+```
+</dd>
+</dl>
+</dd>
+</dl>
+
+#### ⚙️ Parameters
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+**request:** `SearchAgentHashIndexRequest` 
+    
+</dd>
+</dl>
+</dd>
+</dl>
+
+
+</dd>
+</dl>
+</details>
+
+<details><summary><code>client.Agents.<a href="/src/ChronicleLabs/Agents/AgentsClient.cs">SubscribeToAgentChangesAsync</a>() -> WithRawResponseStream&lt;Dictionary&lt;string, object?&gt;&gt;</code></summary>
+<dl>
+<dd>
+
+#### 🔌 Usage
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+```csharp
+client.Agents.SubscribeToAgentChangesAsync();
+```
+</dd>
+</dl>
+</dd>
+</dl>
+
+
+</dd>
+</dl>
+</details>
+
+<details><summary><code>client.Agents.<a href="/src/ChronicleLabs/Agents/AgentsClient.cs">UpdateAgentAsync</a>(UpdateAgentRequest { ... }) -> WithRawResponseTask&lt;AgentSummary&gt;</code></summary>
+<dl>
+<dd>
+
+#### 🔌 Usage
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+```csharp
+await client.Agents.UpdateAgentAsync(new UpdateAgentRequest { Name = "name" });
+```
+</dd>
+</dl>
+</dd>
+</dl>
+
+#### ⚙️ Parameters
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+**request:** `UpdateAgentRequest` 
+    
+</dd>
+</dl>
+</dd>
+</dl>
+
+
+</dd>
+</dl>
+</details>
+
+<details><summary><code>client.Agents.<a href="/src/ChronicleLabs/Agents/AgentsClient.cs">GetAgentSnapshotAsync</a>(GetAgentSnapshotRequest { ... }) -> WithRawResponseTask&lt;AgentSnapshot?&gt;</code></summary>
+<dl>
+<dd>
+
+#### 🔌 Usage
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+```csharp
+await client.Agents.GetAgentSnapshotAsync(new GetAgentSnapshotRequest { Name = "name" });
+```
+</dd>
+</dl>
+</dd>
+</dl>
+
+#### ⚙️ Parameters
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+**request:** `GetAgentSnapshotRequest` 
+    
+</dd>
+</dl>
+</dd>
+</dl>
+
+
+</dd>
+</dl>
+</details>
+
+<details><summary><code>client.Agents.<a href="/src/ChronicleLabs/Agents/AgentsClient.cs">PinLatestAgentVersionAsync</a>(PinLatestAgentVersionRequest { ... }) -> WithRawResponseTask&lt;AgentSummary&gt;</code></summary>
+<dl>
+<dd>
+
+#### 🔌 Usage
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+```csharp
+await client.Agents.PinLatestAgentVersionAsync(new PinLatestAgentVersionRequest { Name = "name" });
+```
+</dd>
+</dl>
+</dd>
+</dl>
+
+#### ⚙️ Parameters
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+**request:** `PinLatestAgentVersionRequest` 
+    
+</dd>
+</dl>
+</dd>
+</dl>
+
+
+</dd>
+</dl>
+</details>
+
+<details><summary><code>client.Agents.<a href="/src/ChronicleLabs/Agents/AgentsClient.cs">CreateAgentChatSessionAsync</a>(CreateAgentChatSessionRequest { ... }) -> WithRawResponseTask&lt;CreateAgentChatSessionResponse&gt;</code></summary>
+<dl>
+<dd>
+
+#### 🔌 Usage
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+```csharp
+await client.Agents.CreateAgentChatSessionAsync(
+    new CreateAgentChatSessionRequest { Name = "name" }
+);
+```
+</dd>
+</dl>
+</dd>
+</dl>
+
+#### ⚙️ Parameters
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+**request:** `CreateAgentChatSessionRequest` 
+    
+</dd>
+</dl>
+</dd>
+</dl>
+
+
+</dd>
+</dl>
+</details>
+
+<details><summary><code>client.Agents.<a href="/src/ChronicleLabs/Agents/AgentsClient.cs">GetAgentChatSessionAsync</a>(GetAgentChatSessionRequest { ... }) -> WithRawResponseTask&lt;AgentChatSession&gt;</code></summary>
+<dl>
+<dd>
+
+#### 🔌 Usage
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+```csharp
+await client.Agents.GetAgentChatSessionAsync(
+    new GetAgentChatSessionRequest { Name = "name", SessionId = "session_id" }
+);
+```
+</dd>
+</dl>
+</dd>
+</dl>
+
+#### ⚙️ Parameters
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+**request:** `GetAgentChatSessionRequest` 
+    
+</dd>
+</dl>
+</dd>
+</dl>
+
+
+</dd>
+</dl>
+</details>
+
+<details><summary><code>client.Agents.<a href="/src/ChronicleLabs/Agents/AgentsClient.cs">SendAgentChatMessageAsync</a>(SendAgentChatMessageRequest { ... }) -> WithRawResponseTask&lt;SendAgentChatMessageResponse&gt;</code></summary>
+<dl>
+<dd>
+
+#### 🔌 Usage
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+```csharp
+await client.Agents.SendAgentChatMessageAsync(
+    new SendAgentChatMessageRequest
+    {
+        Name = "name",
+        SessionId = "session_id",
+        Text = "text",
+    }
+);
+```
+</dd>
+</dl>
+</dd>
+</dl>
+
+#### ⚙️ Parameters
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+**request:** `SendAgentChatMessageRequest` 
+    
+</dd>
+</dl>
+</dd>
+</dl>
+
+
+</dd>
+</dl>
+</details>
+
+<details><summary><code>client.Agents.<a href="/src/ChronicleLabs/Agents/AgentsClient.cs">RegisterAgentArtifactAsync</a>(RegisterAgentArtifactRequest { ... }) -> WithRawResponseTask&lt;AgentVersionSummary&gt;</code></summary>
+<dl>
+<dd>
+
+#### 📝 Description
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+Requires scope agents:write.
+</dd>
+</dl>
+</dd>
+</dl>
+
+#### 🔌 Usage
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+```csharp
+await client.Agents.RegisterAgentArtifactAsync(
+    new RegisterAgentArtifactRequest
+    {
+        Artifact = new RegisterAgentArtifactRequestArtifact
+        {
+            ArtifactId = "artifactId",
+            ConfigHash = "configHash",
+            Framework = RegisterAgentArtifactRequestArtifactFramework.VercelAiSdk,
+            Model = new RegisterAgentArtifactRequestArtifactModel { Label = "label" },
+            Name = "name",
+            Provenance = new RegisterAgentArtifactRequestArtifactProvenance
+            {
+                CreatedAt = new DateTime(2024, 01, 15, 09, 30, 00, 000),
+            },
+            SchemaVersion = "schemaVersion",
+            Tools = new List<RegisterAgentArtifactRequestArtifactToolsItem>()
+            {
+                new RegisterAgentArtifactRequestArtifactToolsItem { Name = "name" },
+            },
+            Version = "version",
+        },
+    }
+);
+```
+</dd>
+</dl>
+</dd>
+</dl>
+
+#### ⚙️ Parameters
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+**request:** `RegisterAgentArtifactRequest` 
+    
+</dd>
+</dl>
+</dd>
+</dl>
+
+
+</dd>
+</dl>
+</details>
+
+<details><summary><code>client.Agents.<a href="/src/ChronicleLabs/Agents/AgentsClient.cs">RecordAgentRunsAsync</a>(RecordAgentRunsRequest { ... }) -> WithRawResponseTask&lt;RecordAgentRunsResponse&gt;</code></summary>
+<dl>
+<dd>
+
+#### 📝 Description
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+Requires scope agents:write.
+</dd>
+</dl>
+</dd>
+</dl>
+
+#### 🔌 Usage
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+```csharp
+await client.Agents.RecordAgentRunsAsync(
+    new RecordAgentRunsRequest
+    {
+        Runs = new List<RecordAgentRunsRequestRunsItem>()
+        {
+            new RecordAgentRunsRequestRunsItem
+            {
+                ArtifactId = "artifactId",
+                ConfigHash = "configHash",
+                Operation = RecordAgentRunsRequestRunsItemOperation.Generate,
+                RunId = "runId",
+                SchemaVersion = "schemaVersion",
+                StartedAt = new DateTime(2024, 01, 15, 09, 30, 00, 000),
+                Status = RecordAgentRunsRequestRunsItemStatus.Started,
+                ToolCalls = new List<RecordAgentRunsRequestRunsItemToolCallsItem>()
+                {
+                    new RecordAgentRunsRequestRunsItemToolCallsItem
+                    {
+                        CallId = "callId",
+                        StartedAt = new DateTime(2024, 01, 15, 09, 30, 00, 000),
+                        Status = RecordAgentRunsRequestRunsItemToolCallsItemStatus.Started,
+                        ToolName = "toolName",
+                    },
+                },
+            },
+        },
+    }
+);
+```
+</dd>
+</dl>
+</dd>
+</dl>
+
+#### ⚙️ Parameters
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+**request:** `RecordAgentRunsRequest` 
+    
+</dd>
+</dl>
+</dd>
+</dl>
+
+
+</dd>
+</dl>
+</details>
+
+## datasets
+<details><summary><code>client.Datasets.<a href="/src/ChronicleLabs/Datasets/DatasetsClient.cs">ListDatasetsAsync</a>(ListDatasetsRequest { ... }) -> WithRawResponseTask&lt;TaskSuitePage&gt;</code></summary>
+<dl>
+<dd>
+
+#### 🔌 Usage
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+```csharp
+await client.Datasets.ListDatasetsAsync(new ListDatasetsRequest());
+```
+</dd>
+</dl>
+</dd>
+</dl>
+
+#### ⚙️ Parameters
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+**request:** `ListDatasetsRequest` 
+    
+</dd>
+</dl>
+</dd>
+</dl>
+
+
+</dd>
+</dl>
+</details>
+
+<details><summary><code>client.Datasets.<a href="/src/ChronicleLabs/Datasets/DatasetsClient.cs">CreateDatasetAsync</a>(CreateTaskSuitePayload { ... }) -> WithRawResponseTask&lt;TaskSuite&gt;</code></summary>
+<dl>
+<dd>
+
+#### 🔌 Usage
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+```csharp
+await client.Datasets.CreateDatasetAsync(new CreateTaskSuitePayload { Name = "name" });
+```
+</dd>
+</dl>
+</dd>
+</dl>
+
+#### ⚙️ Parameters
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+**request:** `CreateTaskSuitePayload` 
+    
+</dd>
+</dl>
+</dd>
+</dl>
+
+
+</dd>
+</dl>
+</details>
+
+<details><summary><code>client.Datasets.<a href="/src/ChronicleLabs/Datasets/DatasetsClient.cs">CreateDatasetWithTraceAsync</a>(CreateTaskSuiteWithTraceRequest { ... }) -> WithRawResponseTask&lt;CreateTaskSuiteWithTraceResponse&gt;</code></summary>
+<dl>
+<dd>
+
+#### 🔌 Usage
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+```csharp
+await client.Datasets.CreateDatasetWithTraceAsync(
+    new CreateTaskSuiteWithTraceRequest
+    {
+        Dataset = new CreateTaskSuiteWithTraceRequestDataset { Name = "name" },
+        Trace = new CreateTaskSuiteWithTraceRequestTrace { TraceId = "traceId" },
+    }
+);
+```
+</dd>
+</dl>
+</dd>
+</dl>
+
+#### ⚙️ Parameters
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+**request:** `CreateTaskSuiteWithTraceRequest` 
+    
+</dd>
+</dl>
+</dd>
+</dl>
+
+
+</dd>
+</dl>
+</details>
+
+<details><summary><code>client.Datasets.<a href="/src/ChronicleLabs/Datasets/DatasetsClient.cs">GetDatasetAsync</a>(GetDatasetRequest { ... }) -> WithRawResponseTask&lt;TaskSuiteDetail&gt;</code></summary>
+<dl>
+<dd>
+
+#### 🔌 Usage
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+```csharp
+await client.Datasets.GetDatasetAsync(new GetDatasetRequest { DatasetId = "dataset_id" });
+```
+</dd>
+</dl>
+</dd>
+</dl>
+
+#### ⚙️ Parameters
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+**request:** `GetDatasetRequest` 
+    
+</dd>
+</dl>
+</dd>
+</dl>
+
+
+</dd>
+</dl>
+</details>
+
+<details><summary><code>client.Datasets.<a href="/src/ChronicleLabs/Datasets/DatasetsClient.cs">ArchiveDatasetAsync</a>(ArchiveDatasetRequest { ... }) -> WithRawResponseTask</code></summary>
+<dl>
+<dd>
+
+#### 🔌 Usage
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+```csharp
+await client.Datasets.ArchiveDatasetAsync(new ArchiveDatasetRequest { DatasetId = "dataset_id" });
+```
+</dd>
+</dl>
+</dd>
+</dl>
+
+#### ⚙️ Parameters
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+**request:** `ArchiveDatasetRequest` 
+    
+</dd>
+</dl>
+</dd>
+</dl>
+
+
+</dd>
+</dl>
+</details>
+
+<details><summary><code>client.Datasets.<a href="/src/ChronicleLabs/Datasets/DatasetsClient.cs">UpdateDatasetAsync</a>(TaskSuitePatch { ... }) -> WithRawResponseTask&lt;TaskSuite&gt;</code></summary>
+<dl>
+<dd>
+
+#### 🔌 Usage
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+```csharp
+await client.Datasets.UpdateDatasetAsync(new TaskSuitePatch { DatasetId = "dataset_id" });
+```
+</dd>
+</dl>
+</dd>
+</dl>
+
+#### ⚙️ Parameters
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+**request:** `TaskSuitePatch` 
+    
+</dd>
+</dl>
+</dd>
+</dl>
+
+
+</dd>
+</dl>
+</details>
+
+<details><summary><code>client.Datasets.<a href="/src/ChronicleLabs/Datasets/DatasetsClient.cs">GetDatasetSnapshotAsync</a>(GetDatasetSnapshotRequest { ... }) -> WithRawResponseTask&lt;TaskSuiteSnapshot&gt;</code></summary>
+<dl>
+<dd>
+
+#### 🔌 Usage
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+```csharp
+await client.Datasets.GetDatasetSnapshotAsync(
+    new GetDatasetSnapshotRequest { DatasetId = "dataset_id" }
+);
+```
+</dd>
+</dl>
+</dd>
+</dl>
+
+#### ⚙️ Parameters
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+**request:** `GetDatasetSnapshotRequest` 
+    
+</dd>
+</dl>
+</dd>
+</dl>
+
+
+</dd>
+</dl>
+</details>
+
+<details><summary><code>client.Datasets.<a href="/src/ChronicleLabs/Datasets/DatasetsClient.cs">ListDatasetTracesAsync</a>(ListDatasetTracesRequest { ... }) -> WithRawResponseTask&lt;TaskPage&gt;</code></summary>
+<dl>
+<dd>
+
+#### 🔌 Usage
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+```csharp
+await client.Datasets.ListDatasetTracesAsync(
+    new ListDatasetTracesRequest { DatasetId = "dataset_id" }
+);
+```
+</dd>
+</dl>
+</dd>
+</dl>
+
+#### ⚙️ Parameters
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+**request:** `ListDatasetTracesRequest` 
+    
+</dd>
+</dl>
+</dd>
+</dl>
+
+
+</dd>
+</dl>
+</details>
+
+<details><summary><code>client.Datasets.<a href="/src/ChronicleLabs/Datasets/DatasetsClient.cs">AddTraceToDatasetAsync</a>(AddTaskFromTraceRequest { ... }) -> WithRawResponseTask&lt;AddTaskFromTraceResponse&gt;</code></summary>
+<dl>
+<dd>
+
+#### 🔌 Usage
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+```csharp
+await client.Datasets.AddTraceToDatasetAsync(
+    new AddTaskFromTraceRequest { DatasetId = "dataset_id", TraceId = "traceId" }
+);
+```
+</dd>
+</dl>
+</dd>
+</dl>
+
+#### ⚙️ Parameters
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+**request:** `AddTaskFromTraceRequest` 
+    
+</dd>
+</dl>
+</dd>
+</dl>
+
+
+</dd>
+</dl>
+</details>
+
+<details><summary><code>client.Datasets.<a href="/src/ChronicleLabs/Datasets/DatasetsClient.cs">UpdateDatasetTracesAsync</a>(UpdateTracesRequest { ... }) -> WithRawResponseTask</code></summary>
+<dl>
+<dd>
+
+#### 🔌 Usage
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+```csharp
+await client.Datasets.UpdateDatasetTracesAsync(
+    new UpdateTracesRequest
+    {
+        DatasetId = "dataset_id",
+        Patch = new UpdateTracesRequestPatch(),
+        TraceIds = new List<string>() { "traceIds" },
+    }
+);
+```
+</dd>
+</dl>
+</dd>
+</dl>
+
+#### ⚙️ Parameters
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+**request:** `UpdateTracesRequest` 
+    
+</dd>
+</dl>
+</dd>
+</dl>
+
+
+</dd>
+</dl>
+</details>
+
+<details><summary><code>client.Datasets.<a href="/src/ChronicleLabs/Datasets/DatasetsClient.cs">RemoveTraceFromDatasetAsync</a>(RemoveTraceFromDatasetRequest { ... }) -> WithRawResponseTask</code></summary>
+<dl>
+<dd>
+
+#### 🔌 Usage
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+```csharp
+await client.Datasets.RemoveTraceFromDatasetAsync(
+    new RemoveTraceFromDatasetRequest { DatasetId = "dataset_id", MembershipId = "membership_id" }
+);
+```
+</dd>
+</dl>
+</dd>
+</dl>
+
+#### ⚙️ Parameters
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+**request:** `RemoveTraceFromDatasetRequest` 
+    
+</dd>
+</dl>
+</dd>
+</dl>
+
+
+</dd>
+</dl>
+</details>
+
+<details><summary><code>client.Datasets.<a href="/src/ChronicleLabs/Datasets/DatasetsClient.cs">RefreshDatasetTraceAsync</a>(RefreshDatasetTraceRequest { ... }) -> WithRawResponseTask&lt;TaskMembership&gt;</code></summary>
+<dl>
+<dd>
+
+#### 🔌 Usage
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+```csharp
+await client.Datasets.RefreshDatasetTraceAsync(
+    new RefreshDatasetTraceRequest
+    {
+        DatasetId = "dataset_id",
+        MembershipId = "membership_id",
+        Body = new RefreshMembershipRequest(),
+    }
+);
+```
+</dd>
+</dl>
+</dd>
+</dl>
+
+#### ⚙️ Parameters
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+**request:** `RefreshDatasetTraceRequest` 
+    
+</dd>
+</dl>
+</dd>
+</dl>
+
+
+</dd>
+</dl>
+</details>
+
+<details><summary><code>client.Datasets.<a href="/src/ChronicleLabs/Datasets/DatasetsClient.cs">ListDatasetTraceEventsAsync</a>(ListDatasetTraceEventsRequest { ... }) -> WithRawResponseTask&lt;TaskEventPage&gt;</code></summary>
+<dl>
+<dd>
+
+#### 🔌 Usage
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+```csharp
+await client.Datasets.ListDatasetTraceEventsAsync(
+    new ListDatasetTraceEventsRequest { DatasetId = "dataset_id", MembershipId = "membership_id" }
+);
+```
+</dd>
+</dl>
+</dd>
+</dl>
+
+#### ⚙️ Parameters
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+**request:** `ListDatasetTraceEventsRequest` 
+    
+</dd>
+</dl>
+</dd>
+</dl>
+
+
+</dd>
+</dl>
+</details>
+
+<details><summary><code>client.Datasets.<a href="/src/ChronicleLabs/Datasets/DatasetsClient.cs">ListTraceDatasetMembershipsAsync</a>(ListTraceDatasetMembershipsRequest { ... }) -> WithRawResponseTask&lt;IEnumerable&lt;TaskMembership&gt;&gt;</code></summary>
+<dl>
+<dd>
+
+#### 🔌 Usage
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+```csharp
+await client.Datasets.ListTraceDatasetMembershipsAsync(
+    new ListTraceDatasetMembershipsRequest { TraceId = "trace_id" }
+);
+```
+</dd>
+</dl>
+</dd>
+</dl>
+
+#### ⚙️ Parameters
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+**request:** `ListTraceDatasetMembershipsRequest` 
+    
+</dd>
+</dl>
+</dd>
+</dl>
+
+
+</dd>
+</dl>
+</details>
+
+<details><summary><code>client.Datasets.<a href="/src/ChronicleLabs/Datasets/DatasetsClient.cs">ListDatasetTasksAsync</a>(ListDatasetTasksRequest { ... }) -> WithRawResponseTask&lt;TaskPage&gt;</code></summary>
+<dl>
+<dd>
+
+#### 🔌 Usage
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+```csharp
+await client.Datasets.ListDatasetTasksAsync(
+    new ListDatasetTasksRequest { DatasetId = "dataset_id" }
+);
+```
+</dd>
+</dl>
+</dd>
+</dl>
+
+#### ⚙️ Parameters
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+**request:** `ListDatasetTasksRequest` 
+    
+</dd>
+</dl>
+</dd>
+</dl>
+
+
+</dd>
+</dl>
+</details>
+
+<details><summary><code>client.Datasets.<a href="/src/ChronicleLabs/Datasets/DatasetsClient.cs">CreateDatasetTaskAsync</a>(CreateDatasetTaskRequest { ... }) -> WithRawResponseTask&lt;Task&gt;</code></summary>
+<dl>
+<dd>
+
+#### 🔌 Usage
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+```csharp
+await client.Datasets.CreateDatasetTaskAsync(
+    new CreateDatasetTaskRequest
+    {
+        DatasetId = "dataset_id",
+        Body = new Dictionary<object, object?>() { { "key", "value" } },
+    }
+);
+```
+</dd>
+</dl>
+</dd>
+</dl>
+
+#### ⚙️ Parameters
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+**request:** `CreateDatasetTaskRequest` 
+    
+</dd>
+</dl>
+</dd>
+</dl>
+
+
+</dd>
+</dl>
+</details>
+
+<details><summary><code>client.Datasets.<a href="/src/ChronicleLabs/Datasets/DatasetsClient.cs">GetDatasetTaskAsync</a>(GetDatasetTaskRequest { ... }) -> WithRawResponseTask&lt;Task&gt;</code></summary>
+<dl>
+<dd>
+
+#### 🔌 Usage
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+```csharp
+await client.Datasets.GetDatasetTaskAsync(
+    new GetDatasetTaskRequest { DatasetId = "dataset_id", MembershipId = "membership_id" }
+);
+```
+</dd>
+</dl>
+</dd>
+</dl>
+
+#### ⚙️ Parameters
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+**request:** `GetDatasetTaskRequest` 
+    
+</dd>
+</dl>
+</dd>
+</dl>
+
+
+</dd>
+</dl>
+</details>
+
+<details><summary><code>client.Datasets.<a href="/src/ChronicleLabs/Datasets/DatasetsClient.cs">DeleteDatasetTaskAsync</a>(DeleteDatasetTaskRequest { ... }) -> WithRawResponseTask</code></summary>
+<dl>
+<dd>
+
+#### 🔌 Usage
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+```csharp
+await client.Datasets.DeleteDatasetTaskAsync(
+    new DeleteDatasetTaskRequest { DatasetId = "dataset_id", MembershipId = "membership_id" }
+);
+```
+</dd>
+</dl>
+</dd>
+</dl>
+
+#### ⚙️ Parameters
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+**request:** `DeleteDatasetTaskRequest` 
+    
+</dd>
+</dl>
+</dd>
+</dl>
+
+
+</dd>
+</dl>
+</details>
+
+<details><summary><code>client.Datasets.<a href="/src/ChronicleLabs/Datasets/DatasetsClient.cs">UpdateDatasetTaskAsync</a>(UpdateDatasetTaskRequest { ... }) -> WithRawResponseTask&lt;Task&gt;</code></summary>
+<dl>
+<dd>
+
+#### 🔌 Usage
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+```csharp
+await client.Datasets.UpdateDatasetTaskAsync(
+    new UpdateDatasetTaskRequest
+    {
+        DatasetId = "dataset_id",
+        MembershipId = "membership_id",
+        Body = new Dictionary<object, object?>() { { "key", "value" } },
+    }
+);
+```
+</dd>
+</dl>
+</dd>
+</dl>
+
+#### ⚙️ Parameters
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+**request:** `UpdateDatasetTaskRequest` 
+    
+</dd>
+</dl>
+</dd>
+</dl>
+
+
+</dd>
+</dl>
+</details>
+
+<details><summary><code>client.Datasets.<a href="/src/ChronicleLabs/Datasets/DatasetsClient.cs">SetDatasetTaskVerifiersAsync</a>(SetTaskVerifiersRequest { ... }) -> WithRawResponseTask&lt;Task&gt;</code></summary>
+<dl>
+<dd>
+
+#### 🔌 Usage
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+```csharp
+await client.Datasets.SetDatasetTaskVerifiersAsync(
+    new SetTaskVerifiersRequest
+    {
+        DatasetId = "dataset_id",
+        MembershipId = "membership_id",
+        Verifiers = new List<SetTaskVerifiersRequestVerifiersItem>()
+        {
+            new SetTaskVerifiersRequestVerifiersItem { ScorerId = "scorerId" },
+        },
+    }
+);
+```
+</dd>
+</dl>
+</dd>
+</dl>
+
+#### ⚙️ Parameters
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+**request:** `SetTaskVerifiersRequest` 
+    
+</dd>
+</dl>
+</dd>
+</dl>
+
+
+</dd>
+</dl>
+</details>
+
+<details><summary><code>client.Datasets.<a href="/src/ChronicleLabs/Datasets/DatasetsClient.cs">ListDatasetTaskEventsAsync</a>(ListDatasetTaskEventsRequest { ... }) -> WithRawResponseTask&lt;TaskEventPage&gt;</code></summary>
+<dl>
+<dd>
+
+#### 🔌 Usage
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+```csharp
+await client.Datasets.ListDatasetTaskEventsAsync(
+    new ListDatasetTaskEventsRequest { DatasetId = "dataset_id", MembershipId = "membership_id" }
+);
+```
+</dd>
+</dl>
+</dd>
+</dl>
+
+#### ⚙️ Parameters
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+**request:** `ListDatasetTaskEventsRequest` 
+    
+</dd>
+</dl>
+</dd>
+</dl>
+
+
+</dd>
+</dl>
+</details>
+
+<details><summary><code>client.Datasets.<a href="/src/ChronicleLabs/Datasets/DatasetsClient.cs">RefreshDatasetTaskAsync</a>(RefreshDatasetTaskRequest { ... }) -> WithRawResponseTask&lt;TaskMembership&gt;</code></summary>
+<dl>
+<dd>
+
+#### 🔌 Usage
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+```csharp
+await client.Datasets.RefreshDatasetTaskAsync(
+    new RefreshDatasetTaskRequest
+    {
+        DatasetId = "dataset_id",
+        MembershipId = "membership_id",
+        Body = new RefreshMembershipRequest(),
+    }
+);
+```
+</dd>
+</dl>
+</dd>
+</dl>
+
+#### ⚙️ Parameters
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+**request:** `RefreshDatasetTaskRequest` 
+    
+</dd>
+</dl>
+</dd>
+</dl>
+
+
+</dd>
+</dl>
+</details>
+
+<details><summary><code>client.Datasets.<a href="/src/ChronicleLabs/Datasets/DatasetsClient.cs">ListDatasetClustersAsync</a>(ListDatasetClustersRequest { ... }) -> WithRawResponseTask&lt;IEnumerable&lt;DatasetCluster&gt;&gt;</code></summary>
+<dl>
+<dd>
+
+#### 🔌 Usage
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+```csharp
+await client.Datasets.ListDatasetClustersAsync(
+    new ListDatasetClustersRequest { DatasetId = "dataset_id" }
+);
+```
+</dd>
+</dl>
+</dd>
+</dl>
+
+#### ⚙️ Parameters
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+**request:** `ListDatasetClustersRequest` 
+    
+</dd>
+</dl>
+</dd>
+</dl>
+
+
+</dd>
+</dl>
+</details>
+
+<details><summary><code>client.Datasets.<a href="/src/ChronicleLabs/Datasets/DatasetsClient.cs">CreateDatasetClusterAsync</a>(CreateClusterRequest { ... }) -> WithRawResponseTask&lt;DatasetCluster&gt;</code></summary>
+<dl>
+<dd>
+
+#### 🔌 Usage
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+```csharp
+await client.Datasets.CreateDatasetClusterAsync(
+    new CreateClusterRequest
+    {
+        DatasetId = "dataset_id",
+        Color = "color",
+        Label = "label",
+    }
+);
+```
+</dd>
+</dl>
+</dd>
+</dl>
+
+#### ⚙️ Parameters
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+**request:** `CreateClusterRequest` 
+    
+</dd>
+</dl>
+</dd>
+</dl>
+
+
+</dd>
+</dl>
+</details>
+
+<details><summary><code>client.Datasets.<a href="/src/ChronicleLabs/Datasets/DatasetsClient.cs">DeleteDatasetClusterAsync</a>(DeleteDatasetClusterRequest { ... }) -> WithRawResponseTask</code></summary>
+<dl>
+<dd>
+
+#### 🔌 Usage
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+```csharp
+await client.Datasets.DeleteDatasetClusterAsync(
+    new DeleteDatasetClusterRequest { DatasetId = "dataset_id", ClusterId = "cluster_id" }
+);
+```
+</dd>
+</dl>
+</dd>
+</dl>
+
+#### ⚙️ Parameters
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+**request:** `DeleteDatasetClusterRequest` 
+    
+</dd>
+</dl>
+</dd>
+</dl>
+
+
+</dd>
+</dl>
+</details>
+
+<details><summary><code>client.Datasets.<a href="/src/ChronicleLabs/Datasets/DatasetsClient.cs">UpdateDatasetClusterAsync</a>(UpdateClusterRequest { ... }) -> WithRawResponseTask&lt;DatasetCluster&gt;</code></summary>
+<dl>
+<dd>
+
+#### 🔌 Usage
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+```csharp
+await client.Datasets.UpdateDatasetClusterAsync(
+    new UpdateClusterRequest { DatasetId = "dataset_id", ClusterId = "cluster_id" }
+);
+```
+</dd>
+</dl>
+</dd>
+</dl>
+
+#### ⚙️ Parameters
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+**request:** `UpdateClusterRequest` 
+    
+</dd>
+</dl>
+</dd>
+</dl>
+
+
+</dd>
+</dl>
+</details>
+
+<details><summary><code>client.Datasets.<a href="/src/ChronicleLabs/Datasets/DatasetsClient.cs">ListDatasetSavedViewsAsync</a>(ListDatasetSavedViewsRequest { ... }) -> WithRawResponseTask&lt;IEnumerable&lt;DatasetSavedView&gt;&gt;</code></summary>
+<dl>
+<dd>
+
+#### 🔌 Usage
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+```csharp
+await client.Datasets.ListDatasetSavedViewsAsync(
+    new ListDatasetSavedViewsRequest { DatasetId = "dataset_id" }
+);
+```
+</dd>
+</dl>
+</dd>
+</dl>
+
+#### ⚙️ Parameters
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+**request:** `ListDatasetSavedViewsRequest` 
+    
+</dd>
+</dl>
+</dd>
+</dl>
+
+
+</dd>
+</dl>
+</details>
+
+<details><summary><code>client.Datasets.<a href="/src/ChronicleLabs/Datasets/DatasetsClient.cs">CreateDatasetSavedViewAsync</a>(CreateSavedViewRequest { ... }) -> WithRawResponseTask&lt;DatasetSavedView&gt;</code></summary>
+<dl>
+<dd>
+
+#### 🔌 Usage
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+```csharp
+await client.Datasets.CreateDatasetSavedViewAsync(
+    new CreateSavedViewRequest
+    {
+        DatasetId = "dataset_id",
+        Name = "name",
+        Scope = CreateSavedViewRequestScope.Personal,
+        State = new CreateSavedViewRequestState(),
+    }
+);
+```
+</dd>
+</dl>
+</dd>
+</dl>
+
+#### ⚙️ Parameters
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+**request:** `CreateSavedViewRequest` 
+    
+</dd>
+</dl>
+</dd>
+</dl>
+
+
+</dd>
+</dl>
+</details>
+
+<details><summary><code>client.Datasets.<a href="/src/ChronicleLabs/Datasets/DatasetsClient.cs">DeleteDatasetSavedViewAsync</a>(DeleteDatasetSavedViewRequest { ... }) -> WithRawResponseTask</code></summary>
+<dl>
+<dd>
+
+#### 🔌 Usage
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+```csharp
+await client.Datasets.DeleteDatasetSavedViewAsync(
+    new DeleteDatasetSavedViewRequest { DatasetId = "dataset_id", ViewId = "view_id" }
+);
+```
+</dd>
+</dl>
+</dd>
+</dl>
+
+#### ⚙️ Parameters
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+**request:** `DeleteDatasetSavedViewRequest` 
+    
+</dd>
+</dl>
+</dd>
+</dl>
+
+
+</dd>
+</dl>
+</details>
+
+<details><summary><code>client.Datasets.<a href="/src/ChronicleLabs/Datasets/DatasetsClient.cs">UpdateDatasetSavedViewAsync</a>(DatasetSavedViewPatch { ... }) -> WithRawResponseTask&lt;DatasetSavedView&gt;</code></summary>
+<dl>
+<dd>
+
+#### 🔌 Usage
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+```csharp
+await client.Datasets.UpdateDatasetSavedViewAsync(
+    new DatasetSavedViewPatch { DatasetId = "dataset_id", ViewId = "view_id" }
+);
+```
+</dd>
+</dl>
+</dd>
+</dl>
+
+#### ⚙️ Parameters
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+**request:** `DatasetSavedViewPatch` 
+    
+</dd>
+</dl>
+</dd>
+</dl>
+
+
+</dd>
+</dl>
+</details>
+
+<details><summary><code>client.Datasets.<a href="/src/ChronicleLabs/Datasets/DatasetsClient.cs">ListDatasetVersionsAsync</a>(ListDatasetVersionsRequest { ... }) -> WithRawResponseTask&lt;IEnumerable&lt;TaskSuiteVersion&gt;&gt;</code></summary>
+<dl>
+<dd>
+
+#### 🔌 Usage
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+```csharp
+await client.Datasets.ListDatasetVersionsAsync(
+    new ListDatasetVersionsRequest { DatasetId = "dataset_id" }
+);
+```
+</dd>
+</dl>
+</dd>
+</dl>
+
+#### ⚙️ Parameters
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+**request:** `ListDatasetVersionsRequest` 
+    
+</dd>
+</dl>
+</dd>
+</dl>
+
+
+</dd>
+</dl>
+</details>
+
+<details><summary><code>client.Datasets.<a href="/src/ChronicleLabs/Datasets/DatasetsClient.cs">PublishDatasetVersionAsync</a>(PublishVersionRequest { ... }) -> WithRawResponseTask&lt;TaskSuiteVersion&gt;</code></summary>
+<dl>
+<dd>
+
+#### 🔌 Usage
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+```csharp
+await client.Datasets.PublishDatasetVersionAsync(
+    new PublishVersionRequest { DatasetId = "dataset_id" }
+);
+```
+</dd>
+</dl>
+</dd>
+</dl>
+
+#### ⚙️ Parameters
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+**request:** `PublishVersionRequest` 
+    
+</dd>
+</dl>
+</dd>
+</dl>
+
+
+</dd>
+</dl>
+</details>
+
+<details><summary><code>client.Datasets.<a href="/src/ChronicleLabs/Datasets/DatasetsClient.cs">GetDatasetVersionAsync</a>(GetDatasetVersionRequest { ... }) -> WithRawResponseTask&lt;TaskSuiteSnapshot&gt;</code></summary>
+<dl>
+<dd>
+
+#### 🔌 Usage
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+```csharp
+await client.Datasets.GetDatasetVersionAsync(
+    new GetDatasetVersionRequest { DatasetId = "dataset_id", VersionId = "version_id" }
+);
+```
+</dd>
+</dl>
+</dd>
+</dl>
+
+#### ⚙️ Parameters
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+**request:** `GetDatasetVersionRequest` 
+    
+</dd>
+</dl>
+</dd>
+</dl>
+
+
+</dd>
+</dl>
+</details>
+
+<details><summary><code>client.Datasets.<a href="/src/ChronicleLabs/Datasets/DatasetsClient.cs">ListDatasetEvaluationRunsAsync</a>(ListDatasetEvaluationRunsRequest { ... }) -> WithRawResponseTask&lt;IEnumerable&lt;TaskSuiteEvalRun&gt;&gt;</code></summary>
+<dl>
+<dd>
+
+#### 🔌 Usage
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+```csharp
+await client.Datasets.ListDatasetEvaluationRunsAsync(
+    new ListDatasetEvaluationRunsRequest { DatasetId = "dataset_id" }
+);
+```
+</dd>
+</dl>
+</dd>
+</dl>
+
+#### ⚙️ Parameters
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+**request:** `ListDatasetEvaluationRunsRequest` 
+    
+</dd>
+</dl>
+</dd>
+</dl>
+
+
+</dd>
+</dl>
+</details>
+
+## environments
+<details><summary><code>client.Environments.<a href="/src/ChronicleLabs/Environments/EnvironmentsClient.cs">ListEnvironmentsAsync</a>() -> WithRawResponseTask&lt;ListEnvironmentsResponse&gt;</code></summary>
+<dl>
+<dd>
+
+#### 🔌 Usage
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+```csharp
+await client.Environments.ListEnvironmentsAsync();
+```
+</dd>
+</dl>
+</dd>
+</dl>
+
+
+</dd>
+</dl>
+</details>
+
+<details><summary><code>client.Environments.<a href="/src/ChronicleLabs/Environments/EnvironmentsClient.cs">CreateEnvironmentAsync</a>(CreateEnvironmentRequest { ... }) -> WithRawResponseTask&lt;EnvironmentResponse&gt;</code></summary>
+<dl>
+<dd>
+
+#### 🔌 Usage
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+```csharp
+await client.Environments.CreateEnvironmentAsync(
+    new CreateEnvironmentRequest { Slug = "slug", Label = "label" }
+);
+```
+</dd>
+</dl>
+</dd>
+</dl>
+
+#### ⚙️ Parameters
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+**request:** `CreateEnvironmentRequest` 
+    
+</dd>
+</dl>
+</dd>
+</dl>
+
+
+</dd>
+</dl>
+</details>
+
+<details><summary><code>client.Environments.<a href="/src/ChronicleLabs/Environments/EnvironmentsClient.cs">GetEnvironmentAsync</a>(GetEnvironmentRequest { ... }) -> WithRawResponseTask&lt;EnvironmentResponse&gt;</code></summary>
+<dl>
+<dd>
+
+#### 🔌 Usage
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+```csharp
+await client.Environments.GetEnvironmentAsync(
+    new GetEnvironmentRequest { EnvironmentId = "environment_id" }
+);
+```
+</dd>
+</dl>
+</dd>
+</dl>
+
+#### ⚙️ Parameters
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+**request:** `GetEnvironmentRequest` 
+    
+</dd>
+</dl>
+</dd>
+</dl>
+
+
+</dd>
+</dl>
+</details>
+
+<details><summary><code>client.Environments.<a href="/src/ChronicleLabs/Environments/EnvironmentsClient.cs">ListEnvironmentVersionsAsync</a>(ListEnvironmentVersionsRequest { ... }) -> WithRawResponseTask&lt;IEnumerable&lt;EnvironmentVersionRecord&gt;&gt;</code></summary>
+<dl>
+<dd>
+
+#### 🔌 Usage
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+```csharp
+await client.Environments.ListEnvironmentVersionsAsync(
+    new ListEnvironmentVersionsRequest { EnvironmentId = "environment_id" }
+);
+```
+</dd>
+</dl>
+</dd>
+</dl>
+
+#### ⚙️ Parameters
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+**request:** `ListEnvironmentVersionsRequest` 
+    
+</dd>
+</dl>
+</dd>
+</dl>
+
+
+</dd>
+</dl>
+</details>
+
+<details><summary><code>client.Environments.<a href="/src/ChronicleLabs/Environments/EnvironmentsClient.cs">CreateEnvironmentVersionAsync</a>(CreateEnvironmentVersionRequest { ... }) -> WithRawResponseTask&lt;EnvironmentVersionResponse&gt;</code></summary>
+<dl>
+<dd>
+
+#### 🔌 Usage
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+```csharp
+await client.Environments.CreateEnvironmentVersionAsync(
+    new CreateEnvironmentVersionRequest { EnvironmentId = "environment_id", Version = "version" }
+);
+```
+</dd>
+</dl>
+</dd>
+</dl>
+
+#### ⚙️ Parameters
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+**request:** `CreateEnvironmentVersionRequest` 
+    
+</dd>
+</dl>
+</dd>
+</dl>
+
+
+</dd>
+</dl>
+</details>
+
+<details><summary><code>client.Environments.<a href="/src/ChronicleLabs/Environments/EnvironmentsClient.cs">GetEnvironmentVersionAsync</a>(GetEnvironmentVersionRequest { ... }) -> WithRawResponseTask&lt;EnvironmentVersionResponse&gt;</code></summary>
+<dl>
+<dd>
+
+#### 🔌 Usage
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+```csharp
+await client.Environments.GetEnvironmentVersionAsync(
+    new GetEnvironmentVersionRequest
+    {
+        EnvironmentId = "environment_id",
+        VersionSelector = "version_selector",
+    }
+);
+```
+</dd>
+</dl>
+</dd>
+</dl>
+
+#### ⚙️ Parameters
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+**request:** `GetEnvironmentVersionRequest` 
+    
+</dd>
+</dl>
+</dd>
+</dl>
+
+
+</dd>
+</dl>
+</details>
+
+<details><summary><code>client.Environments.<a href="/src/ChronicleLabs/Environments/EnvironmentsClient.cs">CompileEnvironmentVersionAsync</a>(CompileEnvironmentRequest { ... }) -> WithRawResponseTask&lt;CompileEnvironmentResponse&gt;</code></summary>
+<dl>
+<dd>
+
+#### 🔌 Usage
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+```csharp
+await client.Environments.CompileEnvironmentVersionAsync(
+    new CompileEnvironmentRequest
+    {
+        EnvironmentId = "environment_id",
+        VersionSelector = "version_selector",
+        DatasetSnapshotId = "datasetSnapshotId",
+        ScenarioId = "scenarioId",
+    }
+);
+```
+</dd>
+</dl>
+</dd>
+</dl>
+
+#### ⚙️ Parameters
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+**request:** `CompileEnvironmentRequest` 
+    
+</dd>
+</dl>
+</dd>
+</dl>
+
+
+</dd>
+</dl>
+</details>
+
+## backtests
+<details><summary><code>client.Backtests.<a href="/src/ChronicleLabs/Backtests/BacktestsClient.cs">GetBacktestsAvailabilityAsync</a>() -> WithRawResponseTask&lt;BacktestsAvailability&gt;</code></summary>
+<dl>
+<dd>
+
+#### 🔌 Usage
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+```csharp
+await client.Backtests.GetBacktestsAvailabilityAsync();
+```
+</dd>
+</dl>
+</dd>
+</dl>
+
+
+</dd>
+</dl>
+</details>
+
+<details><summary><code>client.Backtests.<a href="/src/ChronicleLabs/Backtests/BacktestsClient.cs">ListBacktestJobsAsync</a>(ListBacktestJobsRequest { ... }) -> WithRawResponseTask&lt;ListBacktestJobsResponse&gt;</code></summary>
+<dl>
+<dd>
+
+#### 🔌 Usage
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+```csharp
+await client.Backtests.ListBacktestJobsAsync(new ListBacktestJobsRequest());
+```
+</dd>
+</dl>
+</dd>
+</dl>
+
+#### ⚙️ Parameters
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+**request:** `ListBacktestJobsRequest` 
+    
+</dd>
+</dl>
+</dd>
+</dl>
+
+
+</dd>
+</dl>
+</details>
+
+<details><summary><code>client.Backtests.<a href="/src/ChronicleLabs/Backtests/BacktestsClient.cs">CreateBacktestJobAsync</a>(CreateBacktestJobRequest { ... }) -> WithRawResponseTask&lt;CreateBacktestJobResponse&gt;</code></summary>
+<dl>
+<dd>
+
+#### 📝 Description
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+Returns 202 after the durable job and its trials have been admitted.
+</dd>
+</dl>
+</dd>
+</dl>
+
+#### 🔌 Usage
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+```csharp
+await client.Backtests.CreateBacktestJobAsync(
+    new CreateBacktestJobRequest
+    {
+        Name = "name",
+        Recipe = new CreateBacktestJobRequestRecipe
+        {
+            Agents = new List<CreateBacktestJobRequestRecipeAgentsItem>()
+            {
+                new CreateBacktestJobRequestRecipeAgentsItem
+                {
+                    Hue = "hue",
+                    Id = "id",
+                    Label = "label",
+                    Notes = "notes",
+                },
+            },
+            Data = new CreateBacktestJobRequestRecipeData
+            {
+                Kind = CreateBacktestJobRequestRecipeDataKind.Composed,
+                Scenarios = new List<CreateBacktestJobRequestRecipeDataScenariosItem>()
+                {
+                    new CreateBacktestJobRequestRecipeDataScenariosItem
+                    {
+                        Count = 1,
+                        Id = "id",
+                        Kind = CreateBacktestJobRequestRecipeDataScenariosItemKind.Adversarial,
+                        Label = "label",
+                    },
+                },
+                Sources = new List<CreateBacktestJobRequestRecipeDataSourcesItem>()
+                {
+                    new CreateBacktestJobRequestRecipeDataSourcesItem
+                    {
+                        Count = 1,
+                        Id = "id",
+                        Kind = CreateBacktestJobRequestRecipeDataSourcesItemKind.Prod,
+                        Label = "label",
+                    },
+                },
+            },
+            Graders = new List<CreateBacktestJobRequestRecipeGradersItem>()
+            {
+                new CreateBacktestJobRequestRecipeGradersItem
+                {
+                    Id = "id",
+                    Kind = CreateBacktestJobRequestRecipeGradersItemKind.Rubric,
+                    Label = "label",
+                    Source = CreateBacktestJobRequestRecipeGradersItemSource.Proposed,
+                    Weight = CreateBacktestJobRequestRecipeGradersItemWeight.Low,
+                },
+            },
+            Mode = CreateBacktestJobRequestRecipeMode.Replay,
+            Name = "name",
+        },
+    }
+);
+```
+</dd>
+</dl>
+</dd>
+</dl>
+
+#### ⚙️ Parameters
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+**request:** `CreateBacktestJobRequest` 
+    
+</dd>
+</dl>
+</dd>
+</dl>
+
+
+</dd>
+</dl>
+</details>
+
+<details><summary><code>client.Backtests.<a href="/src/ChronicleLabs/Backtests/BacktestsClient.cs">GetBacktestJobAsync</a>(GetBacktestJobRequest { ... }) -> WithRawResponseTask&lt;BacktestJobDetailResponse&gt;</code></summary>
+<dl>
+<dd>
+
+#### 🔌 Usage
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+```csharp
+await client.Backtests.GetBacktestJobAsync(new GetBacktestJobRequest { JobId = "job_id" });
+```
+</dd>
+</dl>
+</dd>
+</dl>
+
+#### ⚙️ Parameters
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+**request:** `GetBacktestJobRequest` 
+    
+</dd>
+</dl>
+</dd>
+</dl>
+
+
+</dd>
+</dl>
+</details>
+
+<details><summary><code>client.Backtests.<a href="/src/ChronicleLabs/Backtests/BacktestsClient.cs">ListBacktestJobTrialsAsync</a>(ListBacktestJobTrialsRequest { ... }) -> WithRawResponseTask&lt;ListBacktestJobTrialsResponse&gt;</code></summary>
+<dl>
+<dd>
+
+#### 🔌 Usage
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+```csharp
+await client.Backtests.ListBacktestJobTrialsAsync(
+    new ListBacktestJobTrialsRequest { JobId = "job_id" }
+);
+```
+</dd>
+</dl>
+</dd>
+</dl>
+
+#### ⚙️ Parameters
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+**request:** `ListBacktestJobTrialsRequest` 
+    
+</dd>
+</dl>
+</dd>
+</dl>
+
+
+</dd>
+</dl>
+</details>
+
+<details><summary><code>client.Backtests.<a href="/src/ChronicleLabs/Backtests/BacktestsClient.cs">GetBacktestTrialAsync</a>(GetBacktestTrialRequest { ... }) -> WithRawResponseTask&lt;BacktestTrialDetailResponse&gt;</code></summary>
+<dl>
+<dd>
+
+#### 🔌 Usage
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+```csharp
+await client.Backtests.GetBacktestTrialAsync(
+    new GetBacktestTrialRequest { JobId = "job_id", TrialId = "trial_id" }
+);
+```
+</dd>
+</dl>
+</dd>
+</dl>
+
+#### ⚙️ Parameters
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+**request:** `GetBacktestTrialRequest` 
+    
+</dd>
+</dl>
+</dd>
+</dl>
+
+
+</dd>
+</dl>
+</details>
+
+<details><summary><code>client.Backtests.<a href="/src/ChronicleLabs/Backtests/BacktestsClient.cs">CancelBacktestJobAsync</a>(CancelBacktestJobRequest { ... }) -> WithRawResponseTask&lt;CancelBacktestJobResponse&gt;</code></summary>
+<dl>
+<dd>
+
+#### 🔌 Usage
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+```csharp
+await client.Backtests.CancelBacktestJobAsync(new CancelBacktestJobRequest { JobId = "job_id" });
+```
+</dd>
+</dl>
+</dd>
+</dl>
+
+#### ⚙️ Parameters
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+**request:** `CancelBacktestJobRequest` 
+    
+</dd>
+</dl>
+</dd>
+</dl>
+
+
+</dd>
+</dl>
+</details>
+
+<details><summary><code>client.Backtests.<a href="/src/ChronicleLabs/Backtests/BacktestsClient.cs">StreamBacktestJobEventsAsync</a>(StreamBacktestJobEventsRequest { ... }) -> WithRawResponseStream&lt;TrialEvent&gt;</code></summary>
+<dl>
+<dd>
+
+#### 🔌 Usage
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+```csharp
+client.Backtests.StreamBacktestJobEventsAsync(
+    new StreamBacktestJobEventsRequest { JobId = "job_id" }
+);
+```
+</dd>
+</dl>
+</dd>
+</dl>
+
+#### ⚙️ Parameters
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+**request:** `StreamBacktestJobEventsRequest` 
+    
+</dd>
+</dl>
+</dd>
+</dl>
+
+
+</dd>
+</dl>
+</details>
+
+## credentials
+<details><summary><code>client.Credentials.<a href="/src/ChronicleLabs/Credentials/CredentialsClient.cs">ListSdkKeysAsync</a>() -> WithRawResponseTask&lt;SdkKeyListResponse&gt;</code></summary>
+<dl>
+<dd>
+
+#### 🔌 Usage
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+```csharp
+await client.Credentials.ListSdkKeysAsync();
+```
+</dd>
+</dl>
+</dd>
+</dl>
+
+
+</dd>
+</dl>
+</details>
+
+<details><summary><code>client.Credentials.<a href="/src/ChronicleLabs/Credentials/CredentialsClient.cs">CreateSdkKeyAsync</a>(CreateSdkKeyRequest { ... }) -> WithRawResponseTask&lt;CreatedSdkKey&gt;</code></summary>
+<dl>
+<dd>
+
+#### 📝 Description
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+The bearer secret is returned once and is not stored in plaintext.
+</dd>
+</dl>
+</dd>
+</dl>
+
+#### 🔌 Usage
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+```csharp
+await client.Credentials.CreateSdkKeyAsync(
+    new CreateSdkKeyRequest
+    {
+        Name = "name",
+        Scopes = new List<CreateSdkKeyRequestScopesItem>()
+        {
+            CreateSdkKeyRequestScopesItem.TracesWrite,
+        },
+    }
+);
+```
+</dd>
+</dl>
+</dd>
+</dl>
+
+#### ⚙️ Parameters
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+**request:** `CreateSdkKeyRequest` 
+    
+</dd>
+</dl>
+</dd>
+</dl>
+
+
+</dd>
+</dl>
+</details>
+
+<details><summary><code>client.Credentials.<a href="/src/ChronicleLabs/Credentials/CredentialsClient.cs">RevokeSdkKeyAsync</a>(RevokeSdkKeyRequest { ... }) -> WithRawResponseTask</code></summary>
+<dl>
+<dd>
+
+#### 🔌 Usage
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+```csharp
+await client.Credentials.RevokeSdkKeyAsync(new RevokeSdkKeyRequest { KeyId = "key_id" });
+```
+</dd>
+</dl>
+</dd>
+</dl>
+
+#### ⚙️ Parameters
+
+<dl>
+<dd>
+
+<dl>
+<dd>
+
+**request:** `RevokeSdkKeyRequest` 
+    
+</dd>
+</dl>
+</dd>
+</dl>
+
+
+</dd>
+</dl>
+</details>
+
