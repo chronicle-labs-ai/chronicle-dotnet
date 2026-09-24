@@ -894,7 +894,12 @@ public partial class EnvironmentsClient : IEnvironmentsClient
 
     /// <example><code>
     /// await client.Environments.CreateEnvironmentAsync(
-    ///     new CreateEnvironmentRequest { Slug = "slug", Label = "label" }
+    ///     new CreateEnvironmentRequest
+    ///     {
+    ///         Slug = "support-sandbox",
+    ///         Label = "Support sandbox",
+    ///         Description = "Isolated environment for support-agent backtests.",
+    ///     }
     /// );
     /// </code></example>
     public WithRawResponseTask<EnvironmentResponse> CreateEnvironmentAsync(

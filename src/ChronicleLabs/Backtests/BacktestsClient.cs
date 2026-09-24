@@ -138,10 +138,11 @@ public partial class BacktestsClient : IBacktestsClient
         CancellationToken cancellationToken = default
     )
     {
-        var _queryString = new ChronicleLabs.Core.QueryStringBuilder.Builder(capacity: 4)
+        var _queryString = new ChronicleLabs.Core.QueryStringBuilder.Builder(capacity: 5)
             .Add("mode", request.Mode)
             .Add("status", request.Status)
             .Add("limit", request.Limit)
+            .Add("cursor", request.Cursor)
             .Add("offset", request.Offset)
             .MergeAdditional(options?.AdditionalQueryParameters)
             .Build();
@@ -523,8 +524,9 @@ public partial class BacktestsClient : IBacktestsClient
         CancellationToken cancellationToken = default
     )
     {
-        var _queryString = new ChronicleLabs.Core.QueryStringBuilder.Builder(capacity: 2)
+        var _queryString = new ChronicleLabs.Core.QueryStringBuilder.Builder(capacity: 3)
             .Add("limit", request.Limit)
+            .Add("cursor", request.Cursor)
             .Add("offset", request.Offset)
             .MergeAdditional(options?.AdditionalQueryParameters)
             .Build();

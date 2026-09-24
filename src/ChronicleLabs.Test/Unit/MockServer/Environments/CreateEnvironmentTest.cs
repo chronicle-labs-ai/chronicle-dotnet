@@ -14,8 +14,9 @@ public class CreateEnvironmentTest : BaseMockServerTest
     {
         const string requestJson = """
             {
-              "slug": "slug",
-              "label": "label"
+              "slug": "support-sandbox",
+              "label": "Support sandbox",
+              "description": "Isolated environment for support-agent backtests."
             }
             """;
 
@@ -23,12 +24,12 @@ public class CreateEnvironmentTest : BaseMockServerTest
             {
               "environment": {
                 "archivedAt": "2024-01-15T09:30:00.000Z",
-                "createdAt": "2024-01-15T09:30:00.000Z",
-                "description": "description",
-                "id": "id",
-                "label": "label",
-                "slug": "slug",
-                "tenantId": "tenantId"
+                "createdAt": "2026-09-24T14:30:00.000Z",
+                "description": "Isolated environment for support-agent backtests.",
+                "id": "env_01k5z6x7c8v9b0n1m2q3r4s5t6",
+                "label": "Support sandbox",
+                "slug": "support-sandbox",
+                "tenantId": "tenant_example"
               },
               "versions": [
                 {
@@ -63,7 +64,12 @@ public class CreateEnvironmentTest : BaseMockServerTest
             );
 
         var response = await Client.Environments.CreateEnvironmentAsync(
-            new CreateEnvironmentRequest { Slug = "slug", Label = "label" }
+            new CreateEnvironmentRequest
+            {
+                Slug = "support-sandbox",
+                Label = "Support sandbox",
+                Description = "Isolated environment for support-agent backtests.",
+            }
         );
         JsonAssert.AreEqual(response, mockResponse);
     }

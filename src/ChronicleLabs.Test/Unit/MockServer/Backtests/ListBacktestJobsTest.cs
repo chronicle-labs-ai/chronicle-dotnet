@@ -15,6 +15,7 @@ public class ListBacktestJobsTest : BaseMockServerTest
         const string mockResponse = """
             {
               "hasMore": true,
+              "nextCursor": "nextCursor",
               "nextOffset": 1,
               "runs": [
                 {

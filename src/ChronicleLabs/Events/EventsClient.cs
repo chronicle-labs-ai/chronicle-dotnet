@@ -804,9 +804,16 @@ public partial class EventsClient : IEventsClient
     /// await client.Events.IngestEventAsync(
     ///     new IngestRequest
     ///     {
-    ///         Source = "my-agent",
+    ///         Source = "support-agent",
     ///         Topic = "conversations",
     ///         EventType = "message.sent",
+    ///         Entities = new Dictionary&lt;string, string&gt;() { { "user", "usr_123" } },
+    ///         Payload = new Dictionary&lt;object, object?&gt;()
+    ///         {
+    ///             { "content", "Your refund is approved." },
+    ///             { "role", "assistant" },
+    ///         },
+    ///         Timestamp = new DateTime(2026, 09, 24, 14, 30, 00, 000),
     ///     }
     /// );
     /// </code></example>

@@ -1,2 +1,5 @@
 # Specify files that shouldn't be modified by Fern
 src/ChronicleLabs/ChronicleLabs.Custom.props
+.fern/replay.lock
+.fern/replay.yml
+.gitattributes

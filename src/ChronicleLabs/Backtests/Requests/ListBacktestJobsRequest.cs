@@ -15,6 +15,15 @@ public record ListBacktestJobsRequest
     [JsonIgnore]
     public int? Limit { get; set; }
 
+    /// <summary>
+    /// Opaque position returned as `next_cursor` by the preceding page.
+    /// </summary>
+    [JsonIgnore]
+    public string? Cursor { get; set; }
+
+    /// <summary>
+    /// Deprecated compatibility input. Pass the opaque `cursor` instead.
+    /// </summary>
     [JsonIgnore]
     public int? Offset { get; set; }
 
