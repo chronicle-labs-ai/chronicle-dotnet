@@ -14,6 +14,9 @@ public record ListBacktestJobsResponse : IJsonOnDeserialized
     [JsonPropertyName("hasMore")]
     public required bool HasMore { get; set; }
 
+    [JsonPropertyName("nextCursor")]
+    public string? NextCursor { get; set; }
+
     [JsonPropertyName("nextOffset")]
     public int? NextOffset { get; set; }
 

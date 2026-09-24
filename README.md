@@ -51,9 +51,16 @@ var client = new Chronicle("TOKEN");
 await client.Events.IngestEventAsync(
     new IngestRequest
     {
-        Source = "my-agent",
+        Source = "support-agent",
         Topic = "conversations",
         EventType = "message.sent",
+        Entities = new Dictionary<string, string>() { { "user", "usr_123" } },
+        Payload = new Dictionary<object, object?>()
+        {
+            { "content", "Your refund is approved." },
+            { "role", "assistant" },
+        },
+        Timestamp = new DateTime(2026, 09, 24, 14, 30, 00, 000),
     }
 );
 ```

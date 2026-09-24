@@ -84,9 +84,16 @@ Requires scope events:write.
 await client.Events.IngestEventAsync(
     new IngestRequest
     {
-        Source = "my-agent",
+        Source = "support-agent",
         Topic = "conversations",
         EventType = "message.sent",
+        Entities = new Dictionary<string, string>() { { "user", "usr_123" } },
+        Payload = new Dictionary<object, object?>()
+        {
+            { "content", "Your refund is approved." },
+            { "role", "assistant" },
+        },
+        Timestamp = new DateTime(2026, 09, 24, 14, 30, 00, 000),
     }
 );
 ```
@@ -2958,7 +2965,12 @@ await client.Environments.ListEnvironmentsAsync();
 
 ```csharp
 await client.Environments.CreateEnvironmentAsync(
-    new CreateEnvironmentRequest { Slug = "slug", Label = "label" }
+    new CreateEnvironmentRequest
+    {
+        Slug = "support-sandbox",
+        Label = "Support sandbox",
+        Description = "Isolated environment for support-agent backtests.",
+    }
 );
 ```
 </dd>

@@ -15,7 +15,7 @@ public partial class Chronicle : IChronicle
                 { "X-Fern-Language", "C#" },
                 { "X-Fern-SDK-Name", "ChronicleLabs.Api" },
                 { "X-Fern-SDK-Version", global::ChronicleLabs.Version.Current },
-                { "User-Agent", "ChronicleLabs.Api/0.0.13" },
+                { "User-Agent", "ChronicleLabs.Api/0.0.14" },
             }
         );
         foreach (var header in platformHeaders)

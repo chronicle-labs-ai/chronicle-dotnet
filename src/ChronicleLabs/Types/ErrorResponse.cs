@@ -42,7 +42,7 @@ public record ErrorResponse : IJsonOnDeserialized
     /// Stable machine-readable slug to branch on
     /// </summary>
     [JsonPropertyName("code")]
-    public required ErrorResponseCode Code { get; set; }
+    public required string Code { get; set; }
 
     /// <summary>
     /// Retained for existing clients. Same value as `code`.
